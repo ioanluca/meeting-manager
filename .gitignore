@@ -2,3 +2,7 @@
 /Meeting Manager/nbproject/private/
 /Meeting Manager/dist/
 /Meeting Manager/build/
+meetingmanager/src/main/java/META-INF/persistence.xml
+meetingmanager/target/m2e-wtp/web-resources/META-INF/MANIFEST.MF
+meetingmanager/target/m2e-wtp/web-resources/META-INF/maven/com.meetingmanager/meetingmanager/pom.properties
+meetingmanager/target/meetingmanager-1.0-SNAPSHOT/WEB-INF/cl                           asses/META-INF/persistence.xml
