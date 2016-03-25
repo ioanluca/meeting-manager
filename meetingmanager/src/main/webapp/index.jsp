@@ -17,8 +17,8 @@
 <body>
 
 	<%
-		UserService userService = UserServiceFactory.getUserService();
-		User user = userService.getCurrentUser();
+		 UserService userService = UserServiceFactory.getUserService();
+		 User user = userService.getCurrentUser();
 		if (user != null) {
 			pageContext.setAttribute("user", user);
 	%>
@@ -30,12 +30,9 @@
 			out</a>.)
 	</p>
 	<%
-		} else {
-	%>
-	
-	<%--<%@ include file="login.jsp" %> --!> --%>
+		} else { 
+			response.sendRedirect("login.jsp");
 
-	<%
 		}
 	%>
 

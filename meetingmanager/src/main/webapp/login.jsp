@@ -15,8 +15,12 @@
     User user = userService.getCurrentUser();
     %>
 	<h1>Meeting Manager</h1>
-	<a href="<%= userService.createLogoutURL(request.getRequestURI()) %>">SIGN IN</a>
-
+	<a href="<%= userService.createLoginURL(request.getRequestURI()) %>">SIGN IN</a>
+<%	
+	if(user != null) {
+		response.sendRedirect("index.jsp");
+	}
+%>
 
 </body>
 </html>
