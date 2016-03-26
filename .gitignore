@@ -1,2 +1,4 @@
 meetingmanager/src/main/java/META-INF/persistence.xml
 meetingmanager/target
+meetingmanager/.classpath
+meetingmanager/.settings/
