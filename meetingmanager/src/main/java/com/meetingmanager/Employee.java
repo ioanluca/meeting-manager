@@ -49,5 +49,9 @@ public class Employee {
 		ID = iD;
 	}
 	
+	public void addTask(){
+		
+		
+	}
 
 }
