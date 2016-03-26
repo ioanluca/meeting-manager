@@ -1,3 +1,4 @@
+<%@page import="com.meetingmanager.Employee"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
 
@@ -37,10 +38,14 @@
 
 
 	<%
+                                    
+                                    
 		UserService userService = UserServiceFactory.getUserService();
 		User user = userService.getCurrentUser();
+        
 		if (user != null) {
 			pageContext.setAttribute("user", user);
+                                                      user.getNickname();
 	%>
 
 
@@ -49,10 +54,12 @@
 			<div class="col-sm-3 sidenav">
 				<h1>Meeting Manager</h1>
 				<p>
+					
 					Hello, ${fn:escapeXml(user.nickname)}! <a
 						href="<%=userService.createLogoutURL(request.getRequestURI())%>"><button
 							type="button" class="btn btn-lg btn-success">Log Out</button></a>
 				</p>
+                                                                        
 				<ul class="nav nav-pills nav-stacked">
 					<li class="active"><a href="#section1">Home</a></li>
 					<li><a href="#section2">Friends</a></li>
