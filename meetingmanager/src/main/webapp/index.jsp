@@ -8,6 +8,8 @@
 <%@ page import="java.util.List"%>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 
+
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 
@@ -22,6 +24,7 @@
 			|| document
 					.write('<script src="/js/vendor/jquery.min.js"><\/script>')
 </script>
+<script src="/meetingmanager/src/main/webapp/js/isotope.pkgd.min.js"></script>
 <script src="/js/bootstrap.min.js"></script>
 <script src="/js/ie10-viewport-bug-workaround.js"></script>
 <link href="/css/bootstrap.min.css" rel="stylesheet">
@@ -50,12 +53,13 @@
 				<div class="well well-sm titlewelcome">
 					<h1>Meeting Manager</h1>
 
-					<h4> 
-						Hello, ${fn:escapeXml(user.nickname)}! </h4> <a
-							href="<%=userService.createLogoutURL(request.getRequestURI())%>">
-							<button type="button" class="btn btn-lg btn-success ">
-							<span class="glyphicon glyphicon-off" aria-hidden="true"></span> Log Out</button>
-						</a>
+					<h4>Hello, ${fn:escapeXml(user.nickname)}!</h4>
+					<a href="<%=userService.createLogoutURL(request.getRequestURI())%>">
+						<button type="button" class="btn btn-lg btn-success ">
+							<span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+							Log Out
+						</button>
+					</a>
 				</div>
 				<ul class="nav nav-pills nav-stacked">
 					<li class="active"><a href="#section1">Home</a></li>
@@ -70,7 +74,24 @@
 			<div class="col-sm-9"></div>
 
 			<footer class="container-fluid">
-			<p>Footer Text</p>
+			
+			<div class="grid">
+				<div class="grid-item grid-item--width2 grid-item--height2"></div>
+				<div class="grid-item grid-item--width2 grid-item--height2"></div>
+				<div class="grid-item grid-item--width2 grid-item--height2"></div>
+				<div class="grid-item grid-item--width2 grid-item--height2"></div>
+				<div class="grid-item grid-item--width2 grid-item--height2"></div>
+				<div class="grid-item grid-item--width2 grid-item--height2"></div>
+				<div class="grid-item grid-item--width2 grid-item--height2"></div>
+				<div class="grid-item grid-item--width2 grid-item--height2"></div>
+				<div class="grid-item grid-item--width2 grid-item--height2"></div>
+				<div class="grid-item grid-item--width2 grid-item--height2"></div>
+				<div class="grid-item grid-item--width2 grid-item--height2"></div>
+				<div class="grid-item grid-item--width2 grid-item--height2"></div>
+				<div class="grid-item grid-item--width2 grid-item--height2"></div>
+				<div class="grid-item grid-item--width2 grid-item--height2"></div>
+			</div>
+
 			</footer>
 
 
