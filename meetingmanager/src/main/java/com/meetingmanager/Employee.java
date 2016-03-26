@@ -2,19 +2,27 @@ package com.meetingmanager;
 
 import java.util.List;
 
+import com.googlecode.objectify.Key;
+import com.googlecode.objectify.annotation.Entity;
+import com.googlecode.objectify.annotation.Id;
+import com.googlecode.objectify.annotation.Ignore;
+import com.googlecode.objectify.annotation.Index;
+import com.googlecode.objectify.annotation.Parent;
+
+@Entity
 public class Employee {
 	private String firstName;
-	private String lastName;
+	@Index private String lastName;
 	private String userName;
-	private int ID;
-	private List<Task> tasks;
+	@Id private int ID;
+	@Ignore private List<Task> tasks;
 	
-	public Employee(String firstName, String lastName, String userName, int iD) {
+	public Employee(String firstName, String lastName, String userName, int ID) {
 		super();
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.userName = userName;
-		ID = iD;
+		this.ID = ID;
 	}
 
 	public String getFirstName() {
