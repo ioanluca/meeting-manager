@@ -1,12 +1,10 @@
 /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
 .row.content {
-	height: 1500px;
 }
 
 /* Set gray background color and 100% height */
 .sidenav {
 	background-color: #f1f1f1;
-	height: 100%;
 }
 
 .titlewelcome {
@@ -96,3 +94,15 @@ body {
 
 .grid-item--width2 { width: 220px; }
 .grid-item--height2 { height: 220px; }
+
+.tasks .col-sm-2 {
+	background-color: rgb(92, 184, 92);
+	margin-left:20px;
+	height: 200px;
+	border; 1px solid black;
+	width: 200px;
+}
+
+.tasks .row {
+	margin-bottom:30px;
+}
