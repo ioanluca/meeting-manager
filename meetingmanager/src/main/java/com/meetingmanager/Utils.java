@@ -54,6 +54,7 @@ class Utils {
 	static String getUserId(HttpServletRequest req) {
 		UserService userService = UserServiceFactory.getUserService();
 		User user = userService.getCurrentUser();
+		if(user == null) return "haha";
 		return user.getUserId();
 	}
 }
