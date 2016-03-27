@@ -42,7 +42,7 @@
 	<%
 		UserService userService = UserServiceFactory.getUserService();
 		User user = userService.getCurrentUser();
-		if (user != null) {
+		 if (user != null) {
 			pageContext.setAttribute("user", user);
 	%>
 
@@ -64,7 +64,7 @@
 				<ul class="nav nav-pills nav-stacked">
 					<li class="active"><a href="#section1">Home</a></li>
 					<li><a href="#section2">Friends</a></li>
-					<li><a href="Events.jsp">Events</a></li>
+					<li><a href="#section3">Family</a></li>
 					<li><a href="#section3">Photos</a></li>
 				</ul>
 				<br>
@@ -72,8 +72,8 @@
 			</div>
 
 			<div class="col-sm-9">
-			
-			<!--  <div class="grid">
+
+				<!--  <div class="grid">
 				<div class="grid-item grid-item--width2 grid-item--height2"></div>
 				<div class="grid-item grid-item--width2 grid-item--height2"></div>
 				<div class="grid-item grid-item--width2 grid-item--height2"></div>
@@ -90,43 +90,43 @@
 				<div class="grid-item grid-item--width2 grid-item--height2"></div>
 			</div>
 			-->
-			<div class="tasks" >
-			<div class = "row">
-			<div class = "col-sm-2"> </div>
-			<div class = "col-sm-2"> </div>
-			<div class = "col-sm-2"> </div>
-			<div class = "col-sm-2"> </div>
-			<div class = "col-sm-2"> </div>
-			<div class = "col-sm-2"> </div>
-			
-			</div>
-			
-			<div class = "row">
-			<div class = "col-sm-2"> </div>
-			<div class = "col-sm-2"> </div>
-			<div class = "col-sm-2"> </div>
-			<div class = "col-sm-2"> </div>
-			<div class = "col-sm-2"> </div>
-			<div class = "col-sm-2"> </div>
-			
-			</div>
-			<div class = "row">
-			<div class = "col-sm-2"> </div>
-			<div class = "col-sm-2"> </div>
-			<div class = "col-sm-2"> </div>
-			<div class = "col-sm-2"> </div>
-			<div class = "col-sm-2"> </div>
-			<div class = "col-sm-2"> </div>
-			
-			</div>
-			</div>
-			
-			
-			
+				<div class="tasks">
+					<div class="row">
+						<div class="col-sm-2"></div>
+						<div class="col-sm-2"></div>
+						<div class="col-sm-2"></div>
+						<div class="col-sm-2"></div>
+						<div class="col-sm-2"></div>
+						<div class="col-sm-2"></div>
+
+					</div>
+
+					<div class="row">
+						<div class="col-sm-2"></div>
+						<div class="col-sm-2"></div>
+						<div class="col-sm-2"></div>
+						<div class="col-sm-2"></div>
+						<div class="col-sm-2"></div>
+						<div class="col-sm-2"></div>
+
+					</div>
+					<div class="row">
+						<div class="col-sm-2"></div>
+						<div class="col-sm-2"></div>
+						<div class="col-sm-2"></div>
+						<div class="col-sm-2"></div>
+						<div class="col-sm-2"></div>
+						<div class="col-sm-2"></div>
+
+					</div>
+				</div>
+
+
+
 			</div>
 			<footer class="container-fluid">
-			
-				<h1>footer</h1>
+
+			<h1>footer</h1>
 
 			</footer>
 
@@ -134,7 +134,6 @@
 			<%
 				} else {
 					response.sendRedirect("login.jsp");
-
 				}
 			%>
 		

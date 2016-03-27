@@ -1,3 +1,4 @@
+<%@page import="com.google.appengine.datanucleus.Utils"%>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1"%>
 <%@ page import="com.google.appengine.api.users.User" %>
 <%@ page import="com.google.appengine.api.users.UserService" %>
@@ -19,6 +20,9 @@
 <%
 	UserService userService = UserServiceFactory.getUserService();
     User user = userService.getCurrentUser();
+    if(user != null) {
+		response.sendRedirect("index.jsp");
+	}
 %>
 <body>
 	<header>
@@ -29,19 +33,22 @@
                     <div class="intro-text">
                         <span class="name">Meeting Manager</span>
                         <hr class="star-light">
-                        <a class="btn btn-lg btn-success" href="<%= userService.createLoginURL(request.getRequestURI()) %>" role="button">SIGN IN</a>
+                        
+                        <form action="/register" method="get">
+                        	
+                        	<input type="submit" class="btn btn-lg btn-success"" />
+                        	<% UserServiceFactory.getUserService().createLoginURL(request.getRequestURI()) ;%>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
     </header>
+    
+    
 	
     
-<%	
-	if(user != null) {
-		response.sendRedirect("index.jsp");
-	}
-%>
+
 
 </body>
 </html>

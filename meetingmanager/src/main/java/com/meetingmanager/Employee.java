@@ -14,10 +14,16 @@ public class Employee {
 	private String firstName;
 	@Index private String lastName;
 	private String userName;
-	@Id private int ID;
+	@Id private String ID;
 	@Ignore private List<Task> tasks;
 	
-	public Employee(String firstName, String lastName, String userName, int ID) {
+	public Employee() {
+		
+		
+		
+	}
+	
+	public Employee(String firstName, String lastName, String userName, String ID) {
 		super();
 		this.firstName = firstName;
 		this.lastName = lastName;
@@ -49,13 +55,7 @@ public class Employee {
 		this.userName = userName;
 	}
 
-	public int getID() {
-		return ID;
-	}
 
-	public void setID(int iD) {
-		ID = iD;
-	}
 	
 	public void addTask(){
 		
