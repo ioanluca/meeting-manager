@@ -1,0 +1,108 @@
+/* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+.row.content {
+}
+
+/* Set gray background color and 100% height */
+.sidenav {
+	background-color: #f1f1f1;
+}
+
+.titlewelcome {
+	margin-top: 14px;
+}
+
+.titlewelcome h1 {
+	margin-top:5px;
+	margin-bottom:0px;
+}
+
+.titlewelcome h4 {
+	display: inline-block;
+	margin-left:7px;
+}
+
+.titlewelcome button {
+	font-size:12px;
+	float:right;
+}
+
+.titlewelcome span {
+	margin-right: 7px;
+}
+
+.sidenav h1 {
+	margin-left: 6px;
+}
+
+/* Set black background color, white text and some padding */
+footer {
+	background-color: #555;
+	color: white;
+	padding: 15px;
+}
+
+
+
+/* On small screens, set height to 'auto' for sidenav and grid */
+@media screen and (max-width: 767px) {
+	.sidenav {
+		height: auto;
+		padding: 15px;
+	}
+	.row.content {
+		height: auto;
+	}
+}
+
+* {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+
+/* ---- grid ---- */
+
+.grid {
+  background: #CCCCCC;
+  max-width: 100%;
+}
+
+/* clear fix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- .grid-item ---- */
+
+.grid-item {
+  float: left;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+  padding-right: 10px;
+  background: #FFCC00;
+  border: 2px solid #333;
+  border-color: hsla(0, 0%, 0%, 0.7);
+}
+
+.grid-item--width2 { width: 220px; }
+.grid-item--height2 { height: 220px; }
+
+.tasks .col-sm-2 {
+	background-color: rgb(92, 184, 92);
+	margin-left:20px;
+	height: 200px;
+	border; 1px solid black;
+	width: 200px;
+}
+
+.tasks .row {
+	margin-bottom:30px;
+}
